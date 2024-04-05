@@ -2,9 +2,37 @@
 #include <string>
 #include <cmath>
 
-
 using namespace std;
 
+/*
+start
+	declare
+		num intValue1
+		num intValue2
+		num intSum
+		string binString1
+		string binString2
+		string retBinString
+	intValue1 = convertBinToDec(binString1)
+	intValue2 = convertBinToDec(binString2)
+	intSum=intValue1+intValue2
+	retBinString = convertDecToBin(intSum)
+end
+
+//convert the binary string into decimal value
+module convertBinToDec()
+start
+	...
+	return intValue
+end
+
+//convert the decimal value into binary string
+module convertDecToBin()
+start
+	...
+	return binaryString
+end
+*/
 int binaryToInt(string binary) {
 	int decimal = 0;
 	for (int i = binary.length() - 1; i >= 0; i--) {
