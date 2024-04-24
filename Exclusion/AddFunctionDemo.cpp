@@ -42,10 +42,19 @@ Assert result with 12+96=108
 
 string addFunction(string numberA, string numberB, int m);
 
-int demoAddFunction(){
-	string numberA = "12";
-	string numberB = "96";
+// convert to main function
+int demoAdd(){
 	int m = 2;
+	string numberA;
+	string numberB;
+
+	cout << "Enter numberA: ";
+	cin >> numberA;
+	cout << "Enter numberB: ";
+	cin >> numberB;
+	cout << "Enter m: ";
+	cin >> m;
+
 	string strResult = addFunction(numberA, numberB, m);
 	cout << "Result: " << strResult << endl;
 	return 0;
