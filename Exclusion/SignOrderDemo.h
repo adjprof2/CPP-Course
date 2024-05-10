@@ -66,6 +66,7 @@ void printOrderEntry(string signWoodType[], string signLetters[], string signCol
 int main(){
 
 	// refactor the code to allow multiple sign orders storing in arrays
+	// TODO: combine the sign order details into 2 dimensional array and refactor the code
 	string signWoodType[MAX_SIGN_ENTRIES_PER_ORDER];
 	string signLetters[MAX_SIGN_ENTRIES_PER_ORDER];
 	string signColor[MAX_SIGN_ENTRIES_PER_ORDER];
