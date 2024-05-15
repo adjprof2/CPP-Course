@@ -55,7 +55,7 @@ void printOrderEntry(string signWoodType[], string signLetters[], string signCol
 	double totalCharge = 0;
 	for (int i = 0; i < MAX_SIGN_ENTRIES_PER_ORDER; i++) {
 		cout << "Wood type: " << signWoodType[i] << "\t";
-		cout << "Number of letters: " << signLetters[i] << "\t";
+		cout << "letters: " << signLetters[i] << "\t";
 		cout << "Letter color: " << signColor[i] << "\t";
 		cout << "Charge for the order: $" << entryCharge[i] << endl;
 		totalCharge += entryCharge[i];
