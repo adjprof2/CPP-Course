@@ -58,6 +58,12 @@ void printOrderEntry(string entries[MAX_SIGN_ENTRIES_PER_ORDER][3], double entry
 		cout << "Number of letters: " << entries[i][1] << "\t";
 		cout << "Letter color: " << entries[i][2] << "\t";
 		cout << "Charge for the order: $" << entryCharge[i] << endl;
+
+		// for 2.b requirement
+		if (entries[i][0] == "oak" && entries[i][1].length() == 5) {
+			cout << "you have placed a special order for oak wood and 5 letters. \n";
+		}
+
 		totalCharge += entryCharge[i];
 	}
 	cout << "Total charge for a sign order: $" << totalCharge << endl;
