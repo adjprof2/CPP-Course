@@ -7,6 +7,7 @@ int main(){
 
 	double current;
 	int voltage, resistance;
+	double Voltage, Resistance; // nonn-terminal token is case sensitive so Voltage is different from voltage
 
 	cout << "Enter the Voltage: ";
 	cin >> voltage;
