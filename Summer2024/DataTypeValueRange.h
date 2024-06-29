@@ -21,6 +21,6 @@ int main(){
 	cout << "The minimum value of an unsigned short integer is: \"" << uiUnsignedValue << "\"\n";
 
 	//PI=3.14; // this will generate an error
-	cout << "The value of PI is: " << PI << endl;
+	cout << "The value of constant PI is: " << PI << endl;
 
 }
