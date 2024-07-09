@@ -5,9 +5,8 @@
 using namespace std;
 
 // define the function to conver the char to integer
-int charToInt(char c) {
-	return c - 48;
-}
+int charToInt(char c);
+
 
 int main(){
 
@@ -20,4 +19,8 @@ int main(){
 		total = total + charToInt(strNumber[i]);
 	}
 	cout << "Total is: " << total << endl;
+}
+
+int charToInt(char c) {
+	return c - 48;
 }
