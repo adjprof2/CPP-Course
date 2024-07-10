@@ -4,7 +4,8 @@
 
 using namespace std;
 
-// define the function to conver the char to integer
+// define the function to convert the char to integer
+// call by value
 int charToInt(char c);
 
 
