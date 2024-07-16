@@ -18,7 +18,7 @@ void shiftString(string& strMsg, int nShift);
 int charToInt(char c);
 // this is also call by value
 int baseNumberConversion(string strNumber, int base);
-TOD: implement the function to convert the number to base 10 or 2 based on the char array input
+TODO: implement the function to convert the number to base 10 or 2 based on the char array input
 int baseNumberConversion(string strNumber, int nDigits, int base);
 
 int main(){
