@@ -12,6 +12,8 @@ void fillArrayInReverseOrder(int a[], int size, int&numbUsed);
 
 bool searchArray(int x[], int nFlledSize, int nSearch, int&indexFound);
 
+void swap(int& a, int& b);
+
 void bubbleSort(int x[], int nSize);
 
 int main(){
@@ -95,14 +97,18 @@ bool searchArray(int x[], int nFlledSize, int nSearch, int& indexFound){
 	return false;
 }
 
+void swap(int& a, int& b){
+	int temp = a;
+	a = b;
+	b = temp;
+}
+
 void bubbleSort(int x[], int nSize){
 	for (int i = 0; i < nSize; i++) {
 		//for (int j = 0; j < nSize - 1; j++) {
 		for (int j = 0; j < nSize-i-1; j++) {
 			if (x[j] > x[j + 1]) {
-				int temp = x[j];
-				x[j] = x[j + 1];
-				x[j + 1] = temp;
+				swap(x[j], x[j+1]);
 			}
 		}
 	}
