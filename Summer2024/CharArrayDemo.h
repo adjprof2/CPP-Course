@@ -47,7 +47,7 @@ int main(){
 }
 
 void copyString(char cString[], string strMsg){
-	int i;
+	unsigned int i;
 	for (i = 0; i < strMsg.length(); i++) {
 		cString[i] = strMsg[i];
 	}
