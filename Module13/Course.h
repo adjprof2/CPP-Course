@@ -3,14 +3,16 @@
 
 const int MAX_STUDENTS = 10;
 
-struct Course {
+class Course {
+	public:
 	string name;
 	string id;
 	Student students[MAX_STUDENTS];
 	int nEnrolled;
+
+	void enterCourseInfor();
+	void printCourseInfor();
+	Student getStudent(int index);
 };
 
 
-void enterCourseInfor(Course &c);
-void printCourseInfor(Course c);
-Student getStudent(Course c, int index);

@@ -16,3 +16,9 @@ void printCourseInfor(Course c){
 	}
 }
 
+Student getStudent(Course c, int index){
+	cout << "Student " << index << " of the course, " << c.name << endl;
+	cout << &c.students[index];
+	return c.students[index];
+}
+
