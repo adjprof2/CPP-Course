@@ -4,15 +4,21 @@
 const int MAX_STUDENTS = 10;
 
 class Course {
-	public:
+private:
 	string name;
 	string id;
-	Student students[MAX_STUDENTS];
+	Student* students;
 	int nEnrolled;
+
+public:
+	// getter and setter of member variables
+	int getNEnrolled();
+	void setNEnrolled(int nEnrolled);
 
 	void enterCourseInfor();
 	void printCourseInfor();
-	Student getStudent(int index);
+	Student* getStudent(int index);
+
 };
 
 

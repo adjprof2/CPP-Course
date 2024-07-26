@@ -6,6 +6,8 @@ void Course::enterCourseInfor() {
 	cin >> name;
 	cout << "Enter the course id: " << endl;
 	cin >> id;
+	// initial student array
+	students = new Student[10];
 }
 
 void Course::printCourseInfor(){
@@ -16,9 +18,17 @@ void Course::printCourseInfor(){
 	}
 }
 
-Student Course::getStudent(int index){
+Student* Course::getStudent(int index){
 	cout << "Student " << index << " of the course, " << name << endl;
-	cout << &students[index];
-	return students[index];
+	cout << students+index << endl;
+	return (students + index);
+}
+
+int Course::getNEnrolled(){
+	return nEnrolled;
+}
+
+void Course::setNEnrolled(int nEnrolled){
+	this->nEnrolled = nEnrolled;
 }
 

@@ -14,5 +14,6 @@ public:
 	// memeber functions of Student
 	void enterStudentInfo();
 	void printStudentInfo();
+	void setnAssignments(int n);
 };
 

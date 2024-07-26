@@ -16,6 +16,10 @@ void Student::printStudentInfo(){
 	}
 }
 
+void Student::setnAssignments(int n){
+	nAssignments = n;
+}
+
 
 
 
