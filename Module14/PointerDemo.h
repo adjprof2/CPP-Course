@@ -16,10 +16,12 @@ void swap(int a, int b);
 void print(int *pValue);
 void print(int& iValue, int *pValue);
 void print(double& dValue, double *pdValue);
+int* allocateNewInt();
 
 int main()
 {
 
+/*
     short int *pValues = new short int[10];
 
     cout << "pValues: " << pValues << endl;
@@ -39,13 +41,14 @@ int main()
     cout << "tValue+2: " << tValue+2 << endl;
     cout << "*tValue+2: " << *(tValue+2) << endl;
 
-/*
+
     cout << "tValue-1: " << tValue-2 << endl;
     cout << "*tValue-1: " << *(tValue-2) << endl;
 */
-/*
+
 	// int iValue = 10;
-    int *pValue = new int(10);
+    //int *pValue = new int(10);
+	int *pValue = allocateNewInt();
 
     // pValue = &iValue;
     // iValue is call by value; pValue is call by reference becasue we passed in the pointer
@@ -76,8 +79,13 @@ int main()
     *pdValue = *pValue; // the old rule of implicit type conversion is still valid from int to double
 
     cout << "pdValue: " << *pdValue << endl;
-*/
+
     return 0;
+}
+
+int* allocateNewInt(){
+	int *pValue = new int(10);
+	return pValue;
 }
 
 void print(int *pValue){
