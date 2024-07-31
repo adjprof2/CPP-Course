@@ -1,13 +1,24 @@
 
 #include "Course.h"
 
+Course::Course(){
+	cout << "Course constructor called" << endl;
+	// initial student array
+	students = new Student[10];
+}
+
+Course::~Course(){
+	cout << "Course destructor called" << endl;
+	delete[] students;
+}
+
+
 void Course::enterCourseInfor() {
 	cout << "Enter the course name: " << endl;
 	cin >> name;
 	cout << "Enter the course id: " << endl;
 	cin >> id;
-	// initial student array
-	students = new Student[10];
+
 }
 
 void Course::printCourseInfor(){
@@ -19,9 +30,8 @@ void Course::printCourseInfor(){
 }
 
 Student* Course::getStudent(int index){
-	cout << "Student " << index << " of the course, " << name << endl;
-	cout << students+index << endl;
-	return (students + index);
+	cout << "Student " << index << " at address, " << (students+index) << endl;
+	return (students+index);
 }
 
 int Course::getNEnrolled(){

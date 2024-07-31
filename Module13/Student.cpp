@@ -1,5 +1,17 @@
 #include "Student.h"
 
+Student::Student(){
+	cout << "Student constructor called" << endl;
+	assignments = new Assignment[MAX_ASSIGNMENTS];
+}
+
+/*
+Student::~Student() {
+	cout << "Student destructor called" << endl;
+	delete[] assignments;
+}*/
+
+
 void Student::enterStudentInfo() {
     cout << "Enter student name: " << endl;
     cin >> name;

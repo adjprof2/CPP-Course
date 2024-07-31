@@ -7,10 +7,12 @@ class Course {
 private:
 	string name;
 	string id;
-	Student* students;
+	Student* students;	// student pointers should points to the array of Student dynamically allocated
 	int nEnrolled;
 
 public:
+	Course();	// default constructor
+	~Course();	// destructor
 	// getter and setter of member variables
 	int getNEnrolled();
 	void setNEnrolled(int nEnrolled);

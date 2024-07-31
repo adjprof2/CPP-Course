@@ -9,11 +9,18 @@ public:
 	string name = "John Doe";
 	int id;
 	string major;
-	Assignment assignments[MAX_ASSIGNMENTS];
+	Assignment* assignments;
 	int nAssignments = 0;
 	// memeber functions of Student
+
+	// constructor
+	Student();
+	// destructor
+	//~Student();
+
 	void enterStudentInfo();
 	void printStudentInfo();
 	void setnAssignments(int n);
+
 };
 
