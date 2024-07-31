@@ -18,6 +18,8 @@ void print(int& iValue, int *pValue);
 void print(double& dValue, double *pdValue);
 int* allocateNewInt();
 
+typedef int* INTPTR;
+
 int main()
 {
 
@@ -48,7 +50,10 @@ int main()
 
 	// int iValue = 10;
     //int *pValue = new int(10);
-	int *pValue = allocateNewInt();
+	INTPTR pValue = allocateNewInt();
+
+
+	cout << "pValue: " << *pValue << endl;
 
     // pValue = &iValue;
     // iValue is call by value; pValue is call by reference becasue we passed in the pointer
@@ -57,8 +62,13 @@ int main()
 
     *pValue = *pValue + 10;
 
+    delete pValue;
+    pValue = nullptr;	// this is to avoid dangling pointer after delete
+
     int *pValue2;
     pValue2 = pValue;
+
+    //delete pValue;	// this will cause the pValue2 to be dangling pointer
 
     print(pValue2);
 
@@ -79,6 +89,8 @@ int main()
     *pdValue = *pValue; // the old rule of implicit type conversion is still valid from int to double
 
     cout << "pdValue: " << *pdValue << endl;
+
+
 
     return 0;
 }
