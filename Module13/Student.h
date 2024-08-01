@@ -16,7 +16,7 @@ public:
 	// constructor
 	Student();
 	// destructor
-	//~Student();
+	~Student();
 
 	void enterStudentInfo();
 	void printStudentInfo();

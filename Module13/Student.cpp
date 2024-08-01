@@ -1,3 +1,4 @@
+
 #include "Student.h"
 
 Student::Student(){
@@ -6,7 +7,7 @@ Student::Student(){
 }
 
 /*
-Student::~Student() {
+Student::~Student(){
 	cout << "Student destructor called" << endl;
 	delete[] assignments;
 }*/
