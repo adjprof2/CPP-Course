@@ -42,9 +42,6 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry excluding="Lab08|Module13|Module12" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Lab08"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Module12"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Module13"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -91,9 +88,6 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry excluding="Lab08|Module13|Module12" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Lab08"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Module12"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Module13"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
