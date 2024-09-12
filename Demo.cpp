@@ -1,21 +1,26 @@
 #include <iostream>
 
 using namespace std;
+/*
+ * step1: get user input for startingMiles, endingMiles, gallons
+ * step2: calculate distanceDriven = endingMiles - startingMiles
+ * step3: calculate mpg = distanceDriven / gallons
+ * step4: output mpg
+ */
+int main(){
+	// mpg calculation
+	double startingMiles, endingMiles, gallons, mpg;
 
-int main() {
-    double millivolts;
-    std::cout << "Enter the voltage in millivolts: ";
-    std::cin >> millivolts;
+	cout << "Enter starting mileage: ";
+	cin >> startingMiles;
+	cout << "Enter ending mileage: ";
+	cin >> endingMiles;
+	cout << "Enter gallons: ";
+	cin >> gallons;
 
-    double volts = millivolts / 1000.0;;
-    std::cout << "The voltage in volts is: " << volts << std::endl;
+	double distanceDriven = endingMiles - startingMiles;
+	mpg = distanceDriven / gallons;
 
-    double current;
-    std::cout << "Enter the current in milliamps: ";
-    std::cin >> current;
+	cout << "Miles per gallon: " << mpg << endl;
 
-    double amps = current / 1000.0;
-    cout << "The current in amps is: " << amps << endl;
-
-    return 0;
 }
