@@ -1,0 +1,27 @@
+
+// TODO: improve the addition pseudocode below and prove the correctness of the algorithm using variable state table. 
+module ADD(numberA, numberB)
+start
+	// part of step 1, 2
+	declare
+		num carry=0
+		num i=m
+	// step3
+	while (m>=i && i>0)	// this can be further simplified to avoid compound Boolean expression
+		// step 4, rewrite ci as c[i]
+		numberC[i]=numberA[i-1]+numberA[i-1]+carry
+		// step 5
+		if numberC[i]>=10 then
+			numberC[i]=numberC[i]-10
+			carry=1
+		else
+			carry=0
+		endif
+		// step 6
+		i=i-1
+	endwhile
+	// step 7
+	numberC[0]=carry
+	print(numberC)
+	return numberC
+end
