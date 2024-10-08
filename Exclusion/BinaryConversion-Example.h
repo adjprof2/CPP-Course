@@ -26,6 +26,7 @@ int main(){
 	return true;
 }
 
+// call by value as default
 int binaryStringToInt(string binaryString){
 
 	int length = binaryString.length();
